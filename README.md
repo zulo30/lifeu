@@ -15,7 +15,7 @@ Proyecto de Ingenería 2| Universidad EIA :mortar_board:
 
 ## VERTABELLO 
 
-[https://trello.com/proyectolifeu](https://trello.com/proyectolifeu)
+[https://my.vertabelo.com/doc/jZ3hxoIMzwWLKT9L1QYSFlV5OzGRc1M3](https://my.vertabelo.com/doc/jZ3hxoIMzwWLKT9L1QYSFlV5OzGRc1M3)
 
 ## Sprints
 * Agregar calendario

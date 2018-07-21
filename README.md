@@ -1,5 +1,5 @@
-# Proyecto Life U :mortar_board:
-Proyecto de Ingenería 2| Universidad EIA
+# Proyecto Life U 
+Proyecto de Ingenería 2| Universidad EIA :mortar_board:
 ## Como clonar un repositorio en gitKraken
 :file_folder: >> Clone >>Github.com >>Browse >> _escongen el directorio en el cual quieran trabajar_ >>LifeU 
 

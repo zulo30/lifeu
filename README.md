@@ -9,6 +9,8 @@ Proyecto de Ingenería 2| Universidad EIA :mortar_board:
   
 ## Como Subir el codigo a la Repositorio Remoto
 
+![Alt Text](https://media.giphy.com/media/13d3V13RkDXpQ4Qv9v/giphy.gif)
+
 ## Trello 
 
 [https://trello.com/proyectolifeu](https://trello.com/proyectolifeu)

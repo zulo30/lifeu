@@ -13,10 +13,7 @@ Proyecto de Ingenería 2| Universidad EIA :mortar_board:
 seleccionen el buton de STAGED para subirlos.
 3) Escriban un comentario y le dan COMMIT por ultimo pueden pulsan PUSH para subir sus cambios al repositorio remoto.
 
-![Alt Text](https://media.giphy.com/media/58FB1cxsLOqhqiWoc6/giphy.gif)
-
-funciona
-
+![Alt Text](https://media.giphy.com/media/Sb9qo5N1Lm75uiPPJv/giphy.gif)
 
 ## Trello 
 

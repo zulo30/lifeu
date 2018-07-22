@@ -15,6 +15,9 @@ seleccionen el buton de STAGED para subirlos.
 
 ![Alt Text](https://media.giphy.com/media/58FB1cxsLOqhqiWoc6/giphy.gif)
 
+funciona
+
+
 ## Trello 
 
 [https://trello.com/proyectolifeu](https://trello.com/proyectolifeu)

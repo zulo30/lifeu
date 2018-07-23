@@ -1,13 +1,13 @@
 # Proyecto Life U 
 Proyecto de Ingenería 2| Universidad EIA :mortar_board:
-## Como Clonar Un Repositorio en GitKraken
+## Como Clonar Un Repositorio En GitKraken
 :file_folder: *>> Clone >>Github.com >>Browse >> _escogen el directorio en el cual quieran trabajar_ >>lifeu*
 
 ![Alt Text](https://media.giphy.com/media/13d3V13RkDXpQ4Qv9v/giphy.gif)
 
 :heavy_exclamation_mark: ***NOTA: primero tienen que aceptar la invitacion de Github***
   
-## Como Subir el codigo a la Repositorio Remoto
+## Como Subir El Codigo Al Repositorio Remoto
 1) Seleccionan los cambiamos hasta ariba de arbol (Mostrados en la imagen ).
 2) En el panel de la izquierda, miran todos archivos que han sido modificados
 seleccionen el buton de *STAGED* para subirlos.
@@ -19,7 +19,7 @@ seleccionen el buton de *STAGED* para subirlos.
 
 [https://trello.com/proyectolifeu](https://trello.com/proyectolifeu)
 
-## VERTABELLO 
+## Vertabello 
 
 [https://my.vertabelo.com/doc/jZ3hxoIMzwWLKT9L1QYSFlV5OzGRc1M3](https://my.vertabelo.com/doc/jZ3hxoIMzwWLKT9L1QYSFlV5OzGRc1M3)
 

@@ -1,4 +1,4 @@
-# Proyecto Life U 
+﻿# Proyecto Life U 
 Proyecto de Ingenería 2| Universidad EIA :mortar_board:
 ## Como Clonar Un Repositorio En GitKraken
 
@@ -41,5 +41,5 @@ seleccionen el buton de *STAGED* para subirlos.
  
 *  Catalina Reyes Montoya | catalinareyesmontoya@gmail.com
 *  Julian Patiño | julii_p99@hotmail.com
-*  Andrés Mesa Buitrago | xxxxx@xxxxxx.com
+*  Andrés Mesa Buitrago | andresmesa-99@hotmail.com
 *  Mateo Zuluaga Loaiza | zulo30@gmail.com

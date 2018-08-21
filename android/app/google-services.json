@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "366713960240",
+    "firebase_url": "https://llifeu-1534267500829.firebaseio.com",
+    "project_id": "llifeu-1534267500829",
+    "storage_bucket": "llifeu-1534267500829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366713960240:android:1c40d798ae994f01",
+        "android_client_info": {
+          "package_name": "co.dev.lifeu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366713960240-cqin5v084jt5p9fd45f9j1asqjmebk4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_-ZgGA8qKZIq-w6t_htGzhzgEVWPgsEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "splash_screen_logo90.png",
       "scale" : "1x"
     },
     {

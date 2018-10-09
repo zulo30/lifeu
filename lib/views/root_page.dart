@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'auth/auth.dart';
 import 'auth/login_page.dart';
 import 'home_page.dart';
+import 'starter_page.dart';
 
 
 class RootPage extends StatefulWidget {
@@ -18,7 +19,8 @@ enum AuthStatus {
 }
 
 class _RootPageState extends State<RootPage> {
-
+ 
+  bool _gettingStarted = true;
   AuthStatus authStatus = AuthStatus.notSignedIn;
 
   initState() {
@@ -38,7 +40,8 @@ class _RootPageState extends State<RootPage> {
 
   @override
   Widget build(BuildContext context) {
-    switch (authStatus) {
+    if(!_gettingStarted){
+      switch (authStatus) {
       case AuthStatus.notSignedIn:
         return new LoginPage(
           title: 'lifeu',
@@ -50,6 +53,13 @@ class _RootPageState extends State<RootPage> {
           auth: widget.auth,
           onSignOut: () => _updateAuthStatus(AuthStatus.notSignedIn)
         );
+      }
+    }else{
+       _gettingStarted = false;
+       return new PageViewPage(context);
+
+    
     }
+    return new PageViewPage(context);
   }
 }

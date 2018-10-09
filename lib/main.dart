@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'views/root_page.dart';
 import 'views/auth/auth.dart';
+import 'views/form_page.dart';
 
 void main() => runApp(new MyApp());
 
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
       ),
       home: new RootPage(auth: new Auth()),
+      routes: <String, WidgetBuilder> {
+        '/login': (BuildContext context) => new FormPage(),
+      },
     );
   }
 }

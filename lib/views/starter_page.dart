@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 
+import 'auth/auth.dart';
+import 'root_page.dart';
+
 
 class PageViewPage extends StatefulWidget {
   // fields 
-
-  PageViewPage(BuildContext context, {Key key, this.onLayoutToggle})
+ 
+  PageViewPage({String title, BaseAuth auth, void Function() gettingStarted,Key key, this.onLayoutToggle })
         : super(key: key);
-    
+
+  String title;
+  BaseAuth auth;
+  VoidCallback gettingStarted;
   final VoidCallback onLayoutToggle;
 
   @override
@@ -16,9 +22,14 @@ class PageViewPage extends StatefulWidget {
 }
 
 class PageViewPageState extends State<PageViewPage> {
-  BuildContext context;
+
+  @override
+	void initState(){
+		super.initState();
+	}
  
-  Widget _buildPage({String imageUrl,String text ="defaultText", String description = " description not found"}){
+ 
+  Widget _buildPage({BuildContext context,String imageUrl,String text ="defaultText", String description = " description not found"}){
     return Container(
      padding: EdgeInsets.only(left:16.0, right: 16.0),
       alignment: AlignmentDirectional.topStart,
@@ -36,13 +47,17 @@ class PageViewPageState extends State<PageViewPage> {
            children:<Widget>[
               new Text('$text', style: new TextStyle( color:Colors.purple, fontSize: 24.0),),
               new Text('$description', style: new TextStyle( color:Colors.black, fontSize: 16.0),),
-              new RaisedButton(
-                  padding: const EdgeInsets.symmetric(horizontal: 64.0),
-                  textColor: Colors.white,
-                  color: Colors.purple,
-                  onPressed: ()=> Navigator.of(context).pushNamed('/login'),
-                  child: new Text("Get Started"),
-              ),
+                 new RaisedButton(
+                    padding: const EdgeInsets.symmetric(horizontal: 64.0),
+                    textColor: Colors.white,
+                    color: Colors.purple,
+                    onPressed:  () {
+                        //widget?.gettingStarted();
+                        Navigator.pushNamed(context, '/');
+                    },
+                    child: new Text("Get Started"),
+                  ),
+
            ]
           )
          
@@ -70,7 +85,7 @@ class PageViewPageState extends State<PageViewPage> {
             text:'No te pierdas',
             description:'lifeu te brinda la posibilidad de ver los mapas que existan en la app de tu universidad. Así que si eres nuevo, ¡No te pierdas!',
             ),
-          _buildPage(    
+          _buildPage(
             imageUrl:'assets/onboarding_pages/fans.png',
             text:'¿Listo para empezar?',
             description:'La universidad es una experiencia, usa LIFE-U todos los días y ¡mejórala!',

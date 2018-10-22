@@ -34,7 +34,7 @@
           child: new RaisedButton(
             onPressed: ()=> Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PageViewPage(context)),
+                MaterialPageRoute(builder: (context) => PageViewPage()),
             )
           )
       )

@@ -3,7 +3,7 @@ import 'primary_button.dart';
 import 'auth.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key key, this.title, this.auth, this.onSignIn}) : super(key: key);
+  LoginPage({Key key, this.title, this.auth, this.onSignIn }) : super(key: key);
 
   final String title;
   final BaseAuth auth;

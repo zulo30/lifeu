@@ -14,20 +14,24 @@ class RootPage extends StatefulWidget {
 }
 
 enum AuthStatus {
+  gettingStarted,
   notSignedIn,
   signedIn,
 }
 
 class _RootPageState extends State<RootPage> {
  
-  bool _gettingStarted = true;
-  AuthStatus authStatus = AuthStatus.notSignedIn;
+  
+  AuthStatus authStatus = AuthStatus.gettingStarted;
 
   initState() {
     super.initState();
     widget.auth.currentUser().then((userId) {
       setState(() {
-        authStatus = userId != null ? AuthStatus.signedIn : AuthStatus.notSignedIn;
+        if(authStatus != AuthStatus.gettingStarted ){
+        authStatus = (userId != null )? AuthStatus.signedIn : AuthStatus.notSignedIn;
+        }
+        
       });
     });
   }
@@ -40,26 +44,30 @@ class _RootPageState extends State<RootPage> {
 
   @override
   Widget build(BuildContext context) {
-    if(!_gettingStarted){
+   
       switch (authStatus) {
+      case AuthStatus.gettingStarted:
+        return new PageViewPage(
+          title: 'lifeu',
+          auth: widget.auth,
+          gettingStarted: () => _updateAuthStatus(AuthStatus.notSignedIn),
+//          builder: (context) => new Scaffold(),
+        );
       case AuthStatus.notSignedIn:
         return new LoginPage(
           title: 'lifeu',
           auth: widget.auth,
           onSignIn: () => _updateAuthStatus(AuthStatus.signedIn),
+
         );
       case AuthStatus.signedIn:
         return new HomePage(
           auth: widget.auth,
-          onSignOut: () => _updateAuthStatus(AuthStatus.notSignedIn)
+          onSignOut: () => _updateAuthStatus(AuthStatus.notSignedIn),
+
         );
       }
-    }else{
-       _gettingStarted = false;
-       return new PageViewPage(context);
-
-    
     }
-    return new PageViewPage(context);
-  }
+    
+  
 }
